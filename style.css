@@ -1,0 +1,147 @@
+/*APP*/
+.appContainer {
+    width: 90vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.appBody {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.lCol {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid gray;
+    width: 60%;
+    padding: 2%;
+    overflow: scroll;
+}
+
+.rCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    width: 40%;
+    height: 100%;
+}
+
+/*POST*/
+.postContainer {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 95%;
+}
+
+.postHeader {
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.postName {
+    width: 90%;
+}
+
+.postBody {
+    word-wrap: break-word;
+}
+
+.postControls {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
+
+.postControlButton {
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.postHeader .middleRow {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    height: 20%;
+}
+
+.collapsed {
+    display: none;
+}
+
+.tagContainer {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+.tag, .globalTag {
+    border: 1px solid gray;
+    background-color: gainsboro;
+    border-radius: 5px;
+    font-size: 1.5em;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin: 2%;
+    height: 85%;
+}
+
+.tag:hover {
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+/*EDITOR*/
+.postEditor {
+    width: 95%;
+    height: 20%;
+    position: relative;
+}
+
+.editorHeader {
+    color: black;
+    text-align: center;
+    border-top: 1px solid darkgrey;
+}
+
+.editorSendButton {
+    width: 100%;
+    background-color: lightyellow;
+    color: black;
+    border: 1px solid lightgoldenrodyellow;
+}
+
+/*CREATOR*/
+.postCreator {
+    margin-top: 2%;
+}
+
+.preview {
+    background-color: lightgreen;
+    width: 100%;
+    text-align: center;
+}
+
+/*TAGS*/
+.appTagsBody {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tagsTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.clearTagFilter{
+    cursor: pointer;
+}
